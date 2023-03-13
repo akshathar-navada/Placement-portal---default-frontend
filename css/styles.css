@@ -1,0 +1,48 @@
+#title{
+    text-align: center;
+}
+.title{
+    text-align: center;
+    background-color: rgb(112, 112, 230);
+}
+
+
+.clg-name{
+    text-decoration: none;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.5rem;  line-height: 1.5;  font-weight: 900; color: black;
+}
+
+.nav-item{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.nav-link{
+    font-size: 20px;
+}
+
+#pics{
+    text-align: center;
+}
+
+.test-img{
+    width: 75%;
+    margin: 10px;
+}
+
+.carousel-item{
+    padding: 7% 20%;
+}
+
+#pics{
+    background-color:bisque;
+    text-align: center;
+    color: white;
+}
+
+
