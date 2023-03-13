@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+
+</head>
+<style>
+  .register {
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    margin-top: 0;
+    padding: 3%;
+  }
+
+  .register-left {
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+  }
+
+  .bg-light {
+    background: -webkit-linear-gradient(left, #0062cc, #0062cc);
+    background-image: -webkit-linear-gradient(left,
+        #0062cc,
+        #0062cc);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    /* background-repeat-x: initial;
+      background-repeat-y: initial; */
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+  }
+
+  .register {
+    background: -webkit-linear-gradient(left, #0062cc, #0062cc);
+    margin-top: 0;
+    padding: 3%;
+  }
+
+  .register-left input {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    width: 1140;
+    margin-left: 105;
+  }
+
+  .register-right {
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+  }
+
+  .register-left img {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+  }
+
+  @-webkit-keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .register-left p {
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+  }
+
+  .register .register-form {
+    padding: 10%;
+    margin-top: 10%;
+  }
+
+  .navbar-light .navbar-nav .active>.nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+  }
+
+  .btnRegister {
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #009688;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+  }
+
+  .navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+  }
+
+  .lgn {
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 5%;
+    background: #ffffff;
+    color: #0062cc;
+    font-weight: 600;
+    width: 80%;
+    cursor: pointer;
+  }
+
+  .register .nav-tabs {
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+  }
+
+  .register .nav-tabs .nav-link {
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: white;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .register .nav-tabs .nav-link:hover {
+    border: none;
+  }
+
+  .register .nav-tabs .nav-link.active {
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+  }
+
+  .register-heading {
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+  }
+
+  th {
+    height: 50px;
+  }
+
+  td {
+    height: 30px;
+    vertical-align: bottom;
+  }
+
+  .divider:after,
+  .divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+  }
+
+  .h-custom {
+    height: calc(100% - 73px);
+  }
+
+  @media (max-width: 450px) {
+    .h-custom {
+      height: 100%;
+    }
+  }
+
+  .divider:after,
+  .divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+  }
+
+  .h-custom {
+    height: calc(100% - 73px);
+  }
+
+  @media (max-width: 450px) {
+    .h-custom {
+      height: 100%;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">BIT Placement Cell</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid"
+            alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form>
+
+
+
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form3Example3" class="form-control form-control-lg"
+                placeholder="Enter a valid email address" />
+              <!-- <label class="form-label" for="form3Example3">Email address</label> -->
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Enter password" />
+              <!-- <label class="form-label" for="form3Example4">Password</label> -->
+            </div>
+
+
+
+
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                  class="link-danger">Register</a></p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+
+</html>

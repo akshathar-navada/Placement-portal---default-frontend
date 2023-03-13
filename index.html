@@ -1,0 +1,1915 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var gform; gform || (document.addEventListener("gform_main_scripts_loaded", function () { gform.scriptsLoaded = !0 }), window.addEventListener("DOMContentLoaded", function () { gform.domLoaded = !0 }), gform = { domLoaded: !1, scriptsLoaded: !1, initializeOnLoaded: function (o) { gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o) }, hooks: { action: {}, filter: {} }, addAction: function (o, n, r, t) { gform.addHook("action", o, n, r, t) }, addFilter: function (o, n, r, t) { gform.addHook("filter", o, n, r, t) }, doAction: function (o) { gform.doHook("action", o, arguments) }, applyFilters: function (o) { return gform.doHook("filter", o, arguments) }, removeAction: function (o, n) { gform.removeHook("action", o, n) }, removeFilter: function (o, n, r) { gform.removeHook("filter", o, n, r) }, addHook: function (o, n, r, t, i) { null == gform.hooks[o][n] && (gform.hooks[o][n] = []); var e = gform.hooks[o][n]; null == i && (i = n + "_" + e.length), gform.hooks[o][n].push({ tag: i, callable: r, priority: t = null == t ? 10 : t }) }, doHook: function (n, o, r) { var t; if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[n][o] && ((o = gform.hooks[n][o]).sort(function (o, n) { return o.priority - n.priority }), o.forEach(function (o) { "function" != typeof (t = o.callable) && (t = window[t]), "action" == n ? t.apply(null, r) : r[0] = t.apply(null, r) })), "filter" == n) return r[0] }, removeHook: function (o, n, t, i) { var r; null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function (o, n, r) { return !!(null != i && i != o.tag || null != t && t != o.priority) }), gform.hooks[o][n] = r) } });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>BIT Placement Portal</title>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap"
+        media="print" onload="this.media='all'" /><noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" />
+    </noscript>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//www.google.com' />
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+    <link rel="alternate" type="application/rss+xml" title="DS Techsales &raquo; Feed"
+        href="https://www.dstechsales.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="DS Techsales &raquo; Comments Feed"
+        href="https://www.dstechsales.com/comments/feed/" />
+    <style>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+        body {
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow: auto;
+            background: linear-gradient(315deg, rgba(191, 85, 236, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(238, 130, 238, 1) 98%);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            background-attachment: fixed;
+        }
+
+        p {
+            color: black;
+            font-weight: 500;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .wave {
+            background: rgb(255 255 255 / 25%);
+            border-radius: 1000% 1000% 0 0;
+            position: fixed;
+            width: 200%;
+            height: 12em;
+            animation: wave 10s -3s linear infinite;
+            transform: translate3d(0, 0, 0);
+            opacity: 0.8;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+            bottom: -1.25em;
+            animation: wave 18s linear reverse infinite;
+            opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+            bottom: -2.5em;
+            animation: wave 20s -1s reverse infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes wave {
+            2% {
+                transform: translateX(1);
+            }
+
+            25% {
+                transform: translateX(-25%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(1);
+            }
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+    <link data-minify="1" rel='stylesheet' id='bdt-uikit-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/bdthemes-prime-slider-lite/assets/css/bdt-uikit.css?ver=1667587936'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='prime-slider-site-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/bdthemes-prime-slider-lite/assets/css/prime-slider-site.css?ver=1667587936'
+        media='all' />
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='https://www.dstechsales.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' media='all' />
+    <style id='joinchat-button-style-inline-css'>
+        .wp-block-joinchat-button {
+            border: none !important;
+            text-align: center
+        }
+
+        .wp-block-joinchat-button figure {
+            display: table;
+            margin: 0 auto;
+            padding: 0
+        }
+
+        .wp-block-joinchat-button figcaption {
+            font: normal normal 400 .6em/2em var(--wp--preset--font-family--system-font, sans-serif);
+            margin: 0;
+            padding: 0
+        }
+
+        .wp-block-joinchat-button .joinchat-button__qr {
+            background-color: #fff;
+            border: 6px solid #25d366;
+            border-radius: 30px;
+            box-sizing: content-box;
+            display: block;
+            height: 200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 10px;
+            width: 200px
+        }
+
+        .wp-block-joinchat-button .joinchat-button__qr canvas,
+        .wp-block-joinchat-button .joinchat-button__qr img {
+            display: block;
+            margin: auto
+        }
+
+        .wp-block-joinchat-button .joinchat-button__link {
+            align-items: center;
+            background-color: #25d366;
+            border: 6px solid #25d366;
+            border-radius: 30px;
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            line-height: 1.25em;
+            margin: 0 auto;
+            text-decoration: none
+        }
+
+        .wp-block-joinchat-button .joinchat-button__link:before {
+            background: transparent var(--joinchat-ico) no-repeat center;
+            background-size: 100%;
+            content: "";
+            display: block;
+            height: 1.5em;
+            margin: -.75em .75em -.75em 0;
+            width: 1.5em
+        }
+
+        .wp-block-joinchat-button figure+.joinchat-button__link {
+            margin-top: 10px
+        }
+
+        @media (orientation:landscape)and (min-height:481px),
+        (orientation:portrait)and (min-width:481px) {
+            .wp-block-joinchat-button.joinchat-button--qr-only figure+.joinchat-button__link {
+                display: none
+            }
+        }
+
+        @media (max-width:480px),
+        (orientation:landscape)and (max-height:480px) {
+            .wp-block-joinchat-button figure {
+                display: none
+            }
+        }
+    </style>
+    <link rel='stylesheet' id='classic-theme-styles-css'
+        href='https://www.dstechsales.com/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+    <style id='global-styles-inline-css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='hello-elementor-css'
+        href='https://www.dstechsales.com/wp-content/themes/hello-elementor/style.min.css?ver=2.6.1' media='all' />
+    <link rel='stylesheet' id='hello-elementor-theme-style-css'
+        href='https://www.dstechsales.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.6.1' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css'
+        href='https://www.dstechsales.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.8.0'
+        media='all' />
+    <link rel='stylesheet' id='elementor-post-6-css'
+        href='https://www.dstechsales.com/wp-content/uploads/elementor/css/post-6.css?ver=1667487002' media='all' />
+    <link rel='stylesheet' id='eael-general-css'
+        href='https://www.dstechsales.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.4.2'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='eael-1464-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/uploads/essential-addons-elementor/eael-1464.css?ver=1667589572'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-icons-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1667587936'
+        media='all' />
+    <style id='elementor-icons-inline-css'>
+        .elementor-add-new-section .elementor-add-templately-promo-button {
+            background-color: #5d4fff;
+            background-image: url(https://www.dstechsales.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-left: 5px;
+            position: relative;
+            bottom: 5px;
+        }
+
+        .elementor-add-new-section .elementor-add-templately-promo-button {
+            background-color: #5d4fff;
+            background-image: url(https://www.dstechsales.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-left: 5px;
+            position: relative;
+            bottom: 5px;
+        }
+    </style>
+    <link rel='stylesheet' id='elementor-pro-css'
+        href='https://www.dstechsales.com/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.7.3'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='font-awesome-5-all-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1667587936'
+        media='all' />
+    <link rel='stylesheet' id='font-awesome-4-shim-css'
+        href='https://www.dstechsales.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.8.0'
+        media='all' />
+    <link rel='stylesheet' id='elementor-global-css'
+        href='https://www.dstechsales.com/wp-content/uploads/elementor/css/global.css?ver=1667487004' media='all' />
+    <link data-minify="1" rel='stylesheet' id='gform_basic-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=1667589572'
+        media='all' />
+    <link rel='stylesheet' id='gform_theme_components-css'
+        href='https://www.dstechsales.com/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.6.7'
+        media='all' />
+    <link rel='stylesheet' id='gform_theme_ie11-css'
+        href='https://www.dstechsales.com/wp-content/plugins/gravityforms/assets/css/dist/theme-ie11.min.css?ver=2.6.7'
+        media='all' />
+    <link rel='stylesheet' id='gform_theme-css'
+        href='https://www.dstechsales.com/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.6.7'
+        media='all' />
+    <link rel='stylesheet' id='elementor-post-1464-css'
+        href='https://www.dstechsales.com/wp-content/uploads/elementor/css/post-1464.css?ver=1667588711' media='all' />
+    <link rel='stylesheet' id='elementor-post-9-css'
+        href='https://www.dstechsales.com/wp-content/uploads/elementor/css/post-9.css?ver=1667487004' media='all' />
+    <link rel='stylesheet' id='elementor-post-42-css'
+        href='https://www.dstechsales.com/wp-content/uploads/elementor/css/post-42.css?ver=1667487004' media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-icons-ekiticons-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=1667587936'
+        media='all' />
+    <link rel='stylesheet' id='joinchat-css'
+        href='https://www.dstechsales.com/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=4.5.11'
+        media='all' />
+    <style id='joinchat-inline-css'>
+        .joinchat {
+            --red: 37;
+            --green: 211;
+            --blue: 102;
+        }
+    </style>
+    <link data-minify="1" rel='stylesheet' id='ekit-widget-styles-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=1667587936'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='ekit-responsive-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=1667587936'
+        media='all' />
+
+    <link rel='stylesheet' id='elementor-icons-shared-0-css'
+        href='https://www.dstechsales.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-icons-fa-brands-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1667587936'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-icons-fa-regular-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=1667587936'
+        media='all' />
+    <link data-minify="1" rel='stylesheet' id='elementor-icons-fa-solid-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=1667587936'
+        media='all' />
+
+    <script defer='defer' src='https://www.google.com/recaptcha/api.js?hl=en&#038;ver=6.1.1#038;render=explicit'
+        id='gform_recaptcha-js'></script>
+
+    <!-- Google Analytics snippet added by Site Kit -->
+    <script src='https://www.googletagmanager.com/gtag/js?id=UA-177328207-1' id='google_gtagjs-js' async></script>
+    <script id='google_gtagjs-js-after'>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+        gtag('set', 'linker', { "domains": ["www.dstechsales.com"] });
+        gtag("js", new Date());
+        gtag("set", "developer_id.dZTNiMT", true);
+        gtag("config", "UA-177328207-1", { "anonymize_ip": true });
+        gtag("config", "G-QEK7LMNSBS");
+    </script>
+
+    <!-- End Google Analytics snippet added by Site Kit -->
+    <link rel="https://api.w.org/" href="https://www.dstechsales.com/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://www.dstechsales.com/wp-json/wp/v2/pages/1464" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.dstechsales.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="https://www.dstechsales.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.1.1" />
+    <link rel="canonical" href="https://www.dstechsales.com/web-development/" />
+    <link rel='shortlink' href='https://www.dstechsales.com/?p=1464' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://www.dstechsales.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dstechsales.com%2Fweb-development%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://www.dstechsales.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dstechsales.com%2Fweb-development%2F&#038;format=xml" />
+    <meta name="generator" content="Site Kit by Google 1.86.0" />
+    <style>
+        .no-js img.lazyload {
+            display: none;
+        }
+
+        figure.wp-block-image img.lazyloading {
+            min-width: 150px;
+        }
+
+        .lazyload,
+        .lazyloading {
+            opacity: 0;
+        }
+
+        .lazyloaded {
+            opacity: 1;
+            transition: opacity 400ms;
+            transition-delay: 0ms;
+        }
+    </style>
+    <link rel="icon" href="https://www.dstechsales.com/wp-content/uploads/2021/09/DS-png-black-150x150.png"
+        sizes="32x32" />
+    <link rel="icon" href="https://www.dstechsales.com/wp-content/uploads/2021/09/DS-png-black-300x300.png"
+        sizes="192x192" />
+    <link rel="apple-touch-icon"
+        href="https://www.dstechsales.com/wp-content/uploads/2021/09/DS-png-black-300x300.png" />
+    <meta name="msapplication-TileImage"
+        content="https://www.dstechsales.com/wp-content/uploads/2021/09/DS-png-black-300x300.png" />
+
+</head>
+
+<body
+    class="page-template page-template-elementor_header_footer page page-id-1464 elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-1464">
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <a class="skip-link screen-reader-text" href="#content">
+        Skip to content</a>
+
+    <div data-elementor-type="header" data-elementor-id="9" class="elementor elementor-9 elementor-location-header">
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-d03ec1f elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default"
+            data-id="d03ec1f" data-element_type="section"
+            data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-414c1f6"
+                    data-id="414c1f6" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section
+                            class="elementor-section elementor-inner-section elementor-element elementor-element-aa95587 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                            data-id="aa95587" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-664a4d1"
+                                    data-id="664a4d1" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-d4d1c5d elementor-widget elementor-widget-image"
+                                            data-id="d4d1c5d" data-element_type="widget"
+                                            data-widget_type="image.default">
+                                            <div class="elementor-widget-container">
+                                                <style>
+                                                    /*! elementor - v3.8.0 - 30-10-2022 */
+                                                    .elementor-widget-image {
+                                                        text-align: center
+                                                    }
+
+                                                    .elementor-widget-image a {
+                                                        display: inline-block
+                                                    }
+
+                                                    .elementor-widget-image a img[src$=".svg"] {
+                                                        width: 48px
+                                                    }
+
+                                                    .elementor-widget-image img {
+                                                        vertical-align: middle;
+                                                        display: inline-block
+                                                    }
+                                                </style> <img width="1500" height="1500" alt="logo"
+                                                    src="images/logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-fd0f670"
+                                    data-id="fd0f670" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-7e46e93 elementor-mobile-align-right elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-button"
+                                            data-id="7e46e93" data-element_type="widget"
+                                            data-widget_type="button.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-button-wrapper">
+                                                    <a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjQ3NSIsInRvZ2dsZSI6ZmFsc2V9"
+                                                        class="elementor-button-link elementor-button elementor-size-xl"
+                                                        role="button">
+                                                        <span class="elementor-button-content-wrapper">
+                                                            <span
+                                                                class="elementor-button-icon elementor-align-icon-left">
+                                                                <i aria-hidden="true"
+                                                                    class="icon icon-menu-button-of-three-horizontal-lines"></i>
+                                                            </span>
+                                                            <span class="elementor-button-text"></span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-50d9211 elementor-nav-menu__align-right elementor-nav-menu--dropdown-mobile elementor-nav-menu__text-align-center elementor-hidden-mobile elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu"
+                                            data-id="50d9211" data-element_type="widget"
+                                            data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}"
+                                            data-widget_type="nav-menu.default">
+                                            <div class="elementor-widget-container">
+                                                <link rel="stylesheet"
+                                                    href="https://www.dstechsales.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">
+                                                <nav migration_allowed="1" migrated="0" role="navigation"
+                                                    class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-shrink">
+                                                    <ul id="menu-1-50d9211" class="elementor-nav-menu">
+                                                        <li
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-33">
+                                                            <a href="index.html" class="elementor-item">Home</a>
+                                                        </li>
+                                                        <li
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-33">
+                                                            <a href="login.html" class="elementor-item">Login</a>
+                                                        </li>
+                                                        <li
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-33">
+                                                            <a href="register.html" class="elementor-item">Register</a>
+                                                        </li>
+                                                        <li
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36">
+                                                            <a href="applicants.html"
+                                                                class="elementor-item">Applicants</a>
+                                                        </li>
+                                                        <li
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-35">
+                                                            <a href="job_profiles.html" class="elementor-item">Job
+                                                                Profiles
+                                                            </a>
+
+                                                        </li>
+                                                        <li
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32">
+                                                            <a href="jobsOffered.html" class="elementor-item">Jobs
+                                                                offerred</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-280965b"
+                                    data-id="280965b" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-4ab3e39 elementor-tablet-align-right elementor-widget elementor-widget-button"
+                                            data-id="4ab3e39" data-element_type="widget"
+                                            data-widget_type="button.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-button-wrapper">
+                                                    <a href="GetAQuote.html"
+                                                        class="elementor-button-link elementor-button elementor-size-sm"
+                                                        role="button">
+                                                        <span class="elementor-button-content-wrapper">
+                                                            <span class="elementor-button-text">Get A Quote</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div data-elementor-type="wp-page" data-elementor-id="1464" class="elementor elementor-1464">
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-423599a3 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle"
+            data-id="423599a3" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5e63c142"
+                    data-id="5e63c142" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-2428446a elementor-widget elementor-widget-prime-slider-sequester"
+                            data-id="2428446a" data-element_type="widget"
+                            data-widget_type="prime-slider-sequester.default">
+                            <div class="elementor-widget-container">
+                                <div class="bdt-prime-slider">
+                                    <div class="bdt-prime-slider-sequester">
+
+                                        <div class="bdt-position-relative bdt-visible-toggle"
+                                            bdt-slideshow="{&quot;animation&quot;:&quot;fade&quot;,&quot;ratio&quot;:&quot;16:8&quot;,&quot;min-height&quot;:570,&quot;autoplay&quot;:true,&quot;autoplay-interval&quot;:7000,&quot;pause-on-hover&quot;:false,&quot;velocity&quot;:1,&quot;finite&quot;:false}">
+
+                                            <ul class="bdt-slideshow-items">
+
+                                                <li
+                                                    class="bdt-slideshow-item bdt-flex bdt-flex-row bdt-flex-middle elementor-repeater-item-2f4232b ">
+
+
+                                                    <div class="bdt-prime-slider-content">
+                                                        <div class="bdt-prime-slider-desc">
+
+
+                                                            <div class="bdt-main-title">
+                                                                <h1 class="bdt-title-tag"
+                                                                    data-bdt-slideshow-parallax="y: 50,0,-50; opacity: 1,1,0">
+                                                                    <span class="frist-word"></span>Placement Portal
+                                                                </h1>
+                                                            </div>
+
+                                                            <div class="bdt-slider-excerpt"
+                                                                data-bdt-slideshow-parallax="y: 100,0,-80; opacity: 1,1,0">
+                                                                <p>Aims to To create awareness about "career planning"
+                                                                    and "career mapping" among the students.To arrange
+                                                                    campus-interviews by inviting leading
+                                                                    companies to recruit students.</p>
+                                                            </div>
+
+                                                            <div class="bdt-button-wrapper"
+                                                                data-bdt-slideshow-parallax="y: 150,0,-100; opacity: 1,1,0">
+
+
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="bdt-slide-image"
+                                                        style="background-image: url('images/1643394315043bg3.jpg');">
+
+                                                    </div>
+                                                </li>
+
+
+                                                <li
+                                                    class="bdt-slideshow-item bdt-flex bdt-flex-row bdt-flex-middle elementor-repeater-item-2c1ed4c ">
+
+
+                                                    <div class="bdt-prime-slider-content">
+                                                        <div class="bdt-prime-slider-desc">
+
+
+                                                            <div class="bdt-main-title">
+                                                                <h1 class="bdt-title-tag"
+                                                                    data-bdt-slideshow-parallax="y: 50,0,-50; opacity: 1,1,0">
+                                                                    Mission
+                                                                </h1>
+                                                            </div>
+
+                                                            <div class="bdt-slider-excerpt"
+                                                                data-bdt-slideshow-parallax="y: 100,0,-80; opacity: 1,1,0">
+                                                                <p>To train the students to meet the industry
+                                                                    requirements. To guide the students to achieve their
+                                                                    career goals. To provide ample placement
+                                                                    opportunities for the students to get their dream
+                                                                    jobs.
+                                                                </p>
+                                                            </div>
+                                                            <div class="bdt-button-wrapper"
+                                                                data-bdt-slideshow-parallax="y: 150,0,-100; opacity: 1,1,0">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bdt-slide-image"
+                                                        style="background-image: url('images/images.jpg');">
+                                                    </div>
+                                                </li>
+                                                <li
+                                                    class="bdt-slideshow-item bdt-flex bdt-flex-row bdt-flex-middle elementor-repeater-item-7a2a510 ">
+                                                    <div class="bdt-prime-slider-content">
+                                                        <div class="bdt-prime-slider-desc">
+                                                            <div class="bdt-main-title">
+                                                                <h1 class="bdt-title-tag"
+                                                                    data-bdt-slideshow-parallax="y: 50,0,-50; opacity: 1,1,0">
+                                                                    <a
+                                                                        href="https://www.dstechsales.com/digital-marketing/">
+                                                                        <span class="frist-word"></span> The Objectives
+                                                                        Of The Centre Are As Under</a>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="bdt-slider-excerpt"
+                                                                data-bdt-slideshow-parallax="y: 100,0,-80; opacity: 1,1,0">
+                                                                <p>To enhance industry-institute interaction.
+                                                                    To organize seminar, training programmes and
+                                                                    work-shops
+                                                                    for students so as to help students to learn latest
+                                                                    technologies.
+                                                                </p>
+                                                            </div>
+                                                            <div class="bdt-button-wrapper"
+                                                                data-bdt-slideshow-parallax="y: 150,0,-100; opacity: 1,1,0">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bdt-slide-image"
+                                                        style="background-image: url('images/dbms1.jpg');">
+                                                    </div>
+                                                </li>
+                                                <li
+                                                    class="bdt-slideshow-item bdt-flex bdt-flex-row bdt-flex-middle elementor-repeater-item-8e1d0b1 ">
+                                                    <div class="bdt-prime-slider-content">
+                                                        <div class="bdt-prime-slider-desc">
+                                                            <div class="bdt-main-title">
+                                                                <h1 class="bdt-title-tag"
+                                                                    data-bdt-slideshow-parallax="y: 50,0,-50; opacity: 1,1,0">
+                                                                    Placement Training
+                                                                </h1>
+                                                            </div>
+                                                            <div class="bdt-slider-excerpt"
+                                                                data-bdt-slideshow-parallax="y: 100,0,-80; opacity: 1,1,0">
+                                                                <p>To train the students on "Personality development".
+                                                                    To train the students through Mock Interviews to
+                                                                    perform well in the professional interviews as per
+                                                                    the Industries expectations.</p>
+                                                            </div>
+                                                            <div class="bdt-button-wrapper"
+                                                                data-bdt-slideshow-parallax="y: 150,0,-100; opacity: 1,1,0">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bdt-slide-image"
+                                                        style="background-image: url('images/dbms4.jpg');">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="bdt-navigation-arrows">
+                                                <a class="bdt-prime-slider-previous" href="#" bdt-slidenav-previous
+                                                    bdt-slideshow-item="previous"></a>
+                                                <a class="bdt-prime-slider-next" href="#" bdt-slidenav-next
+                                                    bdt-slideshow-item="next"></a>
+                                            </div>
+                                            <ul class="bdt-slideshow-nav bdt-dotnav"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-503c57ae elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="503c57ae" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7889b32d"
+                    data-id="7889b32d" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-4c802c4e elementor-widget elementor-widget-heading"
+                            data-id="4c802c4e" data-element_type="widget"
+                            data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
+                            data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <style>
+                                    /*! elementor - v3.8.0 - 30-10-2022 */
+                                    .elementor-heading-title {
+                                        padding: 0;
+                                        margin: 0;
+                                        line-height: 1
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                                        color: inherit;
+                                        font-size: inherit;
+                                        line-height: inherit
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                        font-size: 15px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                        font-size: 19px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                        font-size: 29px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                        font-size: 39px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                        font-size: 59px
+                                    }
+                                </style>
+                                <h2 class="elementor-heading-title elementor-size-default">Our Recruiters</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <div><img class="center" src="images/Screenshot.png" alt="CSS-3" height="400" width="1000"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-503c57ae elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="503c57ae" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7889b32d"
+                    data-id="7889b32d" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-4c802c4e elementor-widget elementor-widget-heading"
+                            data-id="4c802c4e" data-element_type="widget"
+                            data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
+                            data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <style>
+                                    /*! elementor - v3.8.0 - 30-10-2022 */
+                                    .elementor-heading-title {
+                                        padding: 0;
+                                        margin: 0;
+                                        line-height: 1
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                                        color: inherit;
+                                        font-size: inherit;
+                                        line-height: inherit
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                        font-size: 15px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                        font-size: 19px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                        font-size: 29px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                        font-size: 39px
+                                    }
+
+                                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                        font-size: 59px
+                                    }
+                                </style>
+                                <h2 class="elementor-heading-title elementor-size-default">Placement Activities</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-59d7bf66 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="59d7bf66" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5f640060"
+                    data-id="5f640060" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-1edce5be elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box"
+                            data-id="1edce5be" data-element_type="widget"
+                            data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+                            data-widget_type="icon-box.default">
+                            <div class="elementor-widget-container">
+                                <link rel="stylesheet"
+                                    href="https://www.dstechsales.com/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">
+                                <div class="elementor-icon-box-wrapper">
+                                    <div class="elementor-icon-box-icon">
+                                        <span class="elementor-icon elementor-animation-">
+                                            <i aria-hidden="true" class="icon icon-money-bag2"></i> </span>
+                                    </div>
+                                    <div class="elementor-icon-box-content">
+                                        <h3 class="elementor-icon-box-title">
+                                            <p><span>
+                                                    Pre placement talk conducted by the Cognizant GenC team. </span></p>
+                                        </h3>
+                                        <img src="images/cognizant.jpg" alt="Cognizant">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-558040c0"
+                    data-id="558040c0" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-299e46f5 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box"
+                            data-id="299e46f5" data-element_type="widget"
+                            data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+                            data-widget_type="icon-box.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-icon-box-wrapper">
+                                    <div class="elementor-icon-box-icon">
+                                        <span class="elementor-icon elementor-animation-">
+                                            <i aria-hidden="true" class="icon icon-countdown-timer"></i> </span>
+                                    </div>
+                                    <div class="elementor-icon-box-content">
+                                        <h3 class="elementor-icon-box-title">
+                                            <p><span>
+                                                    Principal addressing placement faculty coordinators.</span></p>
+                                        </h3>
+                                        <img src="images/principal.jpg" alt="principal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2b1291e1"
+                    data-id="2b1291e1" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-669892a6 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box"
+                            data-id="669892a6" data-element_type="widget"
+                            data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+                            data-widget_type="icon-box.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-icon-box-wrapper">
+                                    <div class="elementor-icon-box-icon">
+                                        <span class="elementor-icon elementor-animation-">
+                                            <i aria-hidden="true" class="icon icon-Support-2"></i> </span>
+                                    </div>
+                                    <div class="elementor-icon-box-content">
+                                        <h3 class="elementor-icon-box-title">
+                                            <p><span>
+                                                    Campus Recruitment conducted by Gyansys Team. </span></p>
+                                        </h3>
+                                        <img src="images/bosch.jpg" alt="bosch">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-1a0dc80c elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+            data-id="1a0dc80c" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-66724070"
+                    data-id="66724070" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-6bc5e573 elementor-widget elementor-widget-heading"
+                            data-id="6bc5e573" data-element_type="widget" data-widget_type="heading.default">
+
+                        </div>
+                        <div class="elementor-element elementor-element-22500b81 elementor-widget elementor-widget-heading"
+                            data-id="22500b81" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Facilities
+
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-45724b16 elementor-widget elementor-widget-text-editor"
+                            data-id="45724b16" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <style>
+                                    /*! elementor - v3.8.0 - 30-10-2022 */
+                                    .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                        background-color: #818a91;
+                                        color: #fff
+                                    }
+
+                                    .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                        color: #818a91;
+                                        border: 3px solid;
+                                        background-color: transparent
+                                    }
+
+                                    .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                        margin-top: 8px
+                                    }
+
+                                    .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                        width: 1em;
+                                        height: 1em
+                                    }
+
+                                    .elementor-widget-text-editor .elementor-drop-cap {
+                                        float: left;
+                                        text-align: center;
+                                        line-height: 1;
+                                        font-size: 50px
+                                    }
+
+                                    .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                        display: inline-block
+                                    }
+                                </style>
+
+                                <ul>
+                                    <li>Placement Office: 550 Sq.ft.</li>
+                                    <li>Interview Rooms : 4 Nos</li>
+                                    <li>Pantry Room: Microwave oven, Cutlery, water purifier and etc.</li>
+                                    <li>Group Discussion Rooms : 2 Nos</li>
+                                    <li>Computer Labs to Conduct Online Tests : 8 Nos</li>
+                                    <li>Seminar Hall : 250 Seats capacity with Audio video facilities along with WI-FI
+                                        network for internet connectivity.</li>
+                                    <li>Training Hall : 50 Seats capacity with Audio video facilities along with WI-FI
+                                        network for internet connectivity</li>
+                                    <li>Special Facilities : Audio and Video Conferencing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-65b3742c"
+                    data-id="65b3742c" data-element_type="column"
+                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-66fccf81 elementor-widget elementor-widget-image"
+                            data-id="66fccf81" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img decoding="async" width="800" height="800" alt="Ds Tech"
+                                    data-srcset="https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-1024x1024.png 1024w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-300x300.png 300w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-150x150.png 150w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-768x768.png 768w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-1536x1536.png 1536w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1.png 2000w"
+                                    data-src="https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-1024x1024.png"
+                                    data-sizes="(max-width: 800px) 100vw, 800px"
+                                    class="attachment-large size-large lazyload"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img
+                                        decoding="async" width="800" height="800" src=""
+                                        class="attachment-large size-large" alt="Ds Tech"
+                                        srcset="https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-1024x1024.png 1024w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-300x300.png 300w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-150x150.png 150w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-768x768.png 768w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1-1536x1536.png 1536w, https://www.dstechsales.com/wp-content/uploads/2021/09/About-us-page-amico-1.png 2000w"
+                                        sizes="(max-width: 800px) 100vw, 800px" /></noscript>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-54e3f8ba elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="54e3f8ba" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fa71556"
+                    data-id="fa71556" data-element_type="column">
+                    <div class="elementor-widget-wrap">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-136035e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="136035e" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-756a35e"
+                    data-id="756a35e" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-b0cac9e elementor-widget elementor-widget-heading"
+                            data-id="b0cac9e" data-element_type="widget"
+                            data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
+                            data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Contact us</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-04a3955 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="04a3955" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e3ff025"
+                    data-id="e3ff025" data-element_type="column">
+                    <div class="elementor-widget-wrap">
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7dafaf3"
+                    data-id="7dafaf3" data-element_type="column"
+                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-5d96e98 elementor-widget elementor-widget-heading"
+                            data-id="5d96e98" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Drop us a line!</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-ec23659 elementor-widget elementor-widget-heading"
+                            data-id="ec23659" data-element_type="widget" data-widget_type="heading.default">
+
+                        </div>
+                        <div class="elementor-element elementor-element-ea4763b eael-gravity-form-button-custom elementor-widget elementor-widget-eael-gravity-form"
+                            data-id="ea4763b" data-element_type="widget" data-widget_type="eael-gravity-form.default">
+                            <div class="elementor-widget-container">
+                                <div class="eael-contact-form eael-gravity-form eael-contact-form-align-default">
+
+                                    <div class='gf_browser_unknown gform_wrapper gravity-theme' id='gform_wrapper_1'>
+                                        <form method='post' enctype='multipart/form-data' id='gform_1'
+                                            action='/web-development/' novalidate>
+                                            <div class='gform_body gform-body'>
+                                                <div id='gform_fields_1'
+                                                    class='gform_fields top_label form_sublabel_below description_below'>
+                                                    <div id="field_1_1"
+                                                        class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
+                                                        data-js-reload="field_1_1"><label class='gfield_label'
+                                                            for='input_1_1'>Name<span class="gfield_required"><span
+                                                                    class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                                        <div class='ginput_container ginput_container_text'><input
+                                                                name='input_1' id='input_1_1' type='text' value=''
+                                                                class='large' aria-required="true"
+                                                                aria-invalid="false" /> </div>
+                                                    </div>
+                                                    <div id="field_1_2"
+                                                        class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
+                                                        data-js-reload="field_1_2"><label class='gfield_label'
+                                                            for='input_1_2'>Phone<span class="gfield_required"><span
+                                                                    class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                                        <div class='ginput_container ginput_container_phone'><input
+                                                                name='input_2' id='input_1_2' type='tel' value=''
+                                                                class='large' aria-required="true"
+                                                                aria-invalid="false" /></div>
+                                                    </div>
+                                                    <div id="field_1_3"
+                                                        class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
+                                                        data-js-reload="field_1_3"><label class='gfield_label'
+                                                            for='input_1_3'>Email<span class="gfield_required"><span
+                                                                    class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                                        <div class='ginput_container ginput_container_email'>
+                                                            <input name='input_3' id='input_1_3' type='email' value=''
+                                                                class='large' aria-required="true"
+                                                                aria-invalid="false" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="field_1_4"
+                                                        class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
+                                                        data-js-reload="field_1_4"><label class='gfield_label'
+                                                            for='input_1_4'>Message<span class="gfield_required"><span
+                                                                    class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                                        <div class='ginput_container ginput_container_textarea'>
+                                                            <textarea name='input_4' id='input_1_4'
+                                                                class='textarea small' aria-required="true"
+                                                                aria-invalid="false" rows='10' cols='50'></textarea>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class='gform_footer top_label'> <input type='submit'
+                                                    id='gform_submit_button_1' class='gform_button button'
+                                                    value='Submit'
+                                                    onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  '
+                                                    onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  jQuery("#gform_1").trigger("submit",[true]); }' />
+                                                <input type='hidden' class='gform_hidden' name='is_submit_1'
+                                                    value='1' />
+                                                <input type='hidden' class='gform_hidden' name='gform_submit'
+                                                    value='1' />
+
+                                                <input type='hidden' class='gform_hidden' name='gform_unique_id'
+                                                    value='' />
+                                                <input type='hidden' class='gform_hidden' name='state_1'
+                                                    value='WyJbXSIsIjJkNjQ2NjM0ZGU1NzNlM2VjNjc2NTUzMGIwMWZhNmViIl0=' />
+                                                <input type='hidden' class='gform_hidden'
+                                                    name='gform_target_page_number_1' id='gform_target_page_number_1'
+                                                    value='0' />
+                                                <input type='hidden' class='gform_hidden'
+                                                    name='gform_source_page_number_1' id='gform_source_page_number_1'
+                                                    value='1' />
+                                                <input type='hidden' name='gform_field_values' value='' />
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5551273"
+                    data-id="5551273" data-element_type="column">
+                    <div class="elementor-widget-wrap">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div data-elementor-type="footer" data-elementor-id="42" class="elementor elementor-42 elementor-location-footer">
+        <footer
+            class="elementor-section elementor-top-section elementor-element elementor-element-b7abb8a elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default"
+            data-id="b7abb8a" data-element_type="section"
+            data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;gradient&quot;}">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f4ea82"
+                    data-id="8f4ea82" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section
+                            class="elementor-section elementor-inner-section elementor-element elementor-element-0a439e6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                            data-id="0a439e6" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-053eef0"
+                                    data-id="053eef0" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-0a7d80c elementor-widget elementor-widget-heading"
+                                            data-id="0a7d80c" data-element_type="widget"
+                                            data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Quick Links
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-5fecc0b elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                            data-id="5fecc0b" data-element_type="widget"
+                                            data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <link rel="stylesheet"
+                                                    href="https://www.dstechsales.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="index.html">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Home</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="login.html">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Login</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="applicants.html">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Applicants</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="job_profiles.html">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Profile</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="jobsOffered.html">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Jobs offered</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8400c60"
+                                    data-id="8400c60" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-c116e43 elementor-widget elementor-widget-heading"
+                                            data-id="c116e43" data-element_type="widget"
+                                            data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Get in touch
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-992b88a elementor-mobile-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                            data-id="992b88a" data-element_type="widget"
+                                            data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="http://www.dstechsales.com/contact-us/">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Technology for
+                                                                prosperity</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="https://dstechsales.secureapi.eu/" target="_blank">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Affiliated to
+                                                                VTU</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="https://www.dstechsales.com/web-design">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Approved by AICTE and
+                                                                UGC</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="http://www.dstechsales.com/contact-us/">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Accredited by
+                                                                NBA</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="https://www.dstechsales.com/digital-marketing/">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                                                            </span>
+                                                            <span class="elementor-icon-list-text">Accredited by NAAC
+                                                                with A+ Grade</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-722c14f"
+                                    data-id="722c14f" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-6a3f852 elementor-widget elementor-widget-heading"
+                                            data-id="6a3f852" data-element_type="widget"
+                                            data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Contact us
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-bbb4ac3 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                            data-id="bbb4ac3" data-element_type="widget"
+                                            data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <span class="elementor-icon-list-icon">
+                                                            <i aria-hidden="true" class="fas fa-location-arrow"></i>
+                                                        </span>
+                                                        <span class="elementor-icon-list-text">BIT,K R Road, V V Puram,
+                                                            Bengaluru, Karnataka, India-560004</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="tel:7873722984">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true"
+                                                                    class="fas fa-phone-square-alt"></i> </span>
+                                                            <span class="elementor-icon-list-text">+91 080
+                                                                26615865</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="mailto:info@dstechsales.com">
+
+                                                            <span class="elementor-icon-list-icon">
+                                                                <i aria-hidden="true" class="fas fa-envelope"></i>
+                                                            </span>
+                                                            <span
+                                                                class="elementor-icon-list-text">principalbit4@gmail.com</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                        </section>
+                        <section
+                            class="elementor-section elementor-inner-section elementor-element elementor-element-9c98899 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                            data-id="9c98899" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-dc2061e"
+                                    data-id="dc2061e" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-b2cef2f elementor-widget elementor-widget-text-editor"
+                                            data-id="b2cef2f" data-element_type="widget"
+                                            data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p>Copyright © 2022 | Designed & Developed by Akshatha and Aditi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4dec44b"
+                                    data-id="4dec44b" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-c46b41c elementor-widget elementor-widget-text-editor"
+                                            data-id="c46b41c" data-element_type="widget"
+                                            data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <a href="https://www.facebook.com/bitsince1979"><img
+                                                        src="images/facebook.png" alt="facebook"> </a>
+                                                <a href="https://twitter.com/bitsince1979"><img src="images/twitter.png"
+                                                        alt="twitter"></a>
+                                                <a href="https://www.instagram.com/bitsince1979/"><img
+                                                        src="images/insta.png" alt="instagram"></a>
+                                                <a href="https://www.youtube.com/bitsince1979"><img
+                                                        src="images/youtube.png" alt="youtube"></a>
+                                                <a href="https://www.linkedin.com/school/bitsince1979/"><img
+                                                        src="images/linkedin.png" alt="linkedin"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="joinchat joinchat--right"
+        data-settings='{"telephone":"918249927042","mobile_only":false,"button_delay":3,"whatsapp_web":true,"qr":false,"message_views":2,"message_delay":3,"message_badge":true,"message_send":"","message_hash":"83c62604"}'>
+        <div class="joinchat__button">
+            <div class="joinchat__button__open"></div>
+            <div class="joinchat__button__sendtext">Open chat</div>
+            <svg class="joinchat__button__send" width="60" height="60" viewbox="0 0 400 400" stroke-linecap="round"
+                stroke-width="33">
+                <path class="joinchat_svg__plain"
+                    d="M168.83 200.504H79.218L33.04 44.284a1 1 0 0 1 1.386-1.188L365.083 199.04a1 1 0 0 1 .003 1.808L34.432 357.903a1 1 0 0 1-1.388-1.187l29.42-99.427" />
+                <path class="joinchat_svg__chat"
+                    d="M318.087 318.087c-52.982 52.982-132.708 62.922-195.725 29.82l-80.449 10.18 10.358-80.112C18.956 214.905 28.836 134.99 81.913 81.913c65.218-65.217 170.956-65.217 236.174 0 42.661 42.661 57.416 102.661 44.265 157.316" />
+            </svg>
+            <div class="joinchat__badge">1</div>
+        </div>
+        <div class="joinchat__box">
+            <div class="joinchat__header">
+                <span class="joinchat__header__text">DSTECH</span>
+                <div class="joinchat__close" aria-label="Close"></div>
+            </div>
+            <div class="joinchat__box__scroll">
+                <div class="joinchat__box__content">
+                    <div class="joinchat__message">Hello, How can we help you?</div>
+                </div>
+            </div>
+        </div>
+        <svg style="width:0;height:0;position:absolute">
+            <defs>
+                <clipPath id="joinchat__message__peak">
+                    <path
+                        d="M17 25V0C17 12.877 6.082 14.9 1.031 15.91c-1.559.31-1.179 2.272.004 2.272C9.609 18.182 17 18.088 17 25z" />
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+    <link data-minify="1" rel='stylesheet' id='ps-sequester-css'
+        href='https://www.dstechsales.com/wp-content/cache/min/1/wp-content/plugins/bdthemes-prime-slider-lite/assets/css/ps-sequester.css?ver=1667587936'
+        media='all' />
+    <link rel='stylesheet' id='elementor-post-475-css'
+        href='https://www.dstechsales.com/wp-content/uploads/elementor/css/post-475.css?ver=1667487005' media='all' />
+    <link rel='stylesheet' id='e-animations-css'
+        href='https://www.dstechsales.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.8.0'
+        media='all' />
+    <script id='rocket-browser-checker-js-after'>
+        "use strict"; var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor) } } return function (Constructor, protoProps, staticProps) { return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor } }(); function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function") } var RocketBrowserCompatibilityChecker = function () { function RocketBrowserCompatibilityChecker(options) { _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options } return _createClass(RocketBrowserCompatibilityChecker, [{ key: "_checkPassiveOption", value: function (self) { try { var options = { get passive() { return !(self.passiveSupported = !0) } }; window.addEventListener("test", null, options), window.removeEventListener("test", null, options) } catch (err) { self.passiveSupported = !1 } } }, { key: "initRequestIdleCallback", value: function () { !1 in window && (window.requestIdleCallback = function (cb) { var start = Date.now(); return setTimeout(function () { cb({ didTimeout: !1, timeRemaining: function () { return Math.max(0, 50 - (Date.now() - start)) } }) }, 1) }), !1 in window && (window.cancelIdleCallback = function (id) { return clearTimeout(id) }) } }, { key: "isDataSaverModeOn", value: function () { return "connection" in navigator && !0 === navigator.connection.saveData } }, { key: "supportsLinkPrefetch", value: function () { var elem = document.createElement("link"); return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype } }, { key: "isSlowConnection", value: function () { return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType) } }]), RocketBrowserCompatibilityChecker }();
+    </script>
+    <script id='rocket-preload-links-js-extra'>
+        var RocketPreloadLinksConfig = { "excludeUris": "\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/www.dstechsales.com", "onHoverDelay": "100", "rateThrottle": "3" };
+    </script>
+    <script id='rocket-preload-links-js-after'>
+        (function () {
+            "use strict"; var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e = function () { function i(e, t) { for (var n = 0; n < t.length; n++) { var i = t[n]; i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i) } } return function (e, t, n) { return t && i(e.prototype, t), n && i(e, n), e } }(); function i(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } var t = function () { function n(e, t) { i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0 } return e(n, [{ key: "init", value: function () { !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = { excludeUris: RegExp(this.config.excludeUris, "i"), images: RegExp(".(" + this.config.imageExt + ")$", "i"), fileExt: RegExp(".(" + this.config.fileExt + ")$", "i") }, this._initListeners(this)) } }, { key: "_initListeners", value: function (e) { -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions) } }, { key: "listener", value: function (e) { var t = e.target.closest("a"), n = this._prepareUrl(t); if (null !== n) switch (e.type) { case "mousedown": case "touchstart": this._addPrefetchLink(n); break; case "mouseover": this._earlyPrefetch(t, n, "mouseout") } } }, { key: "_earlyPrefetch", value: function (t, e, n) { var i = this, r = setTimeout(function () { if (r = null, 0 === i.numOnHover) setTimeout(function () { return i.numOnHover = 0 }, 1e3); else if (i.numOnHover > i.config.rateThrottle) return; i.numOnHover++, i._addPrefetchLink(e) }, this.config.onHoverDelay); t.addEventListener(n, function e() { t.removeEventListener(n, e, { passive: !0 }), null !== r && (clearTimeout(r), r = null) }, { passive: !0 }) } }, { key: "_addPrefetchLink", value: function (i) { return this.prefetched.add(i.href), new Promise(function (e, t) { var n = document.createElement("link"); n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n) }).catch(function () { }) } }, { key: "_prepareUrl", value: function (e) { if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null; var t = e.href.substring(0, this.config.siteUrl.length), n = this._getPathname(e.href, t), i = { original: e.href, protocol: e.protocol, origin: t, pathname: n, href: t + n }; return this._isLinkOk(i) ? i : null } }, { key: "_getPathname", value: function (e, t) { var n = t ? e.substring(this.config.siteUrl.length) : e; return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n } }, { key: "_shouldAddTrailingSlash", value: function (e) { return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e) } }, { key: "_isLinkOk", value: function (e) { return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href)) } }], [{ key: "run", value: function () { "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({ capture: !0, passive: !0 }), RocketPreloadLinksConfig).init() } }]), n }(); t.run();
+        }());
+    </script>
+
+    <script id='eael-general-js-extra'>
+        var localize = { "ajaxurl": "https:\/\/www.dstechsales.com\/wp-admin\/admin-ajax.php", "nonce": "d5e2cd6619", "i18n": { "added": "Added ", "compare": "Compare", "loading": "Loading..." }, "page_permalink": "https:\/\/www.dstechsales.com\/web-development\/", "cart_redirectition": "", "cart_page_url": "", "el_breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } };
+    </script>
+    <script src='https://www.dstechsales.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5'
+        id='wp-hooks-js'></script>
+    <script src='https://www.dstechsales.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae'
+        id='wp-i18n-js'></script>
+    <script id='elementor-frontend-js-before'>
+        var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.8.0", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "e_import_export": true, "e_hidden_wordpress_widgets": true, "theme_builder_v2": true, "hello-theme-header-footer": true, "landing-pages": true, "elements-color-picker": true, "favorite-widgets": true, "admin-top-bar": true, "page-transitions": true, "notes": true, "form-submissions": true, "e_scroll_snap": true }, "urls": { "assets": "https:\/\/www.dstechsales.com\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "hello_header_logo_type": "title", "hello_header_menu_layout": "horizontal", "hello_footer_logo_type": "logo" }, "post": { "id": 1464, "title": "Web%20Development%20%E2%80%93%20DS%20Techsales", "excerpt": "", "featuredImage": false } };
+    </script>
+    <script id='elementor-pro-frontend-js-before'>
+        var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/www.dstechsales.com\/wp-admin\/admin-ajax.php", "nonce": "7715109a0b", "urls": { "assets": "https:\/\/www.dstechsales.com\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/www.dstechsales.com\/wp-json\/" }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/www.dstechsales.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
+    </script>
+    <script id='elementskit-elementor-js-extra'>
+        var ekit_config = { "ajaxurl": "https:\/\/www.dstechsales.com\/wp-admin\/admin-ajax.php", "nonce": "bbcf764b7f" };
+    </script>
+    <script src="https://www.dstechsales.com/wp-content/cache/min/1/0c064cd0d22a07ea0724c0ad5bd594b0.js"
+        data-minify="1"></script>
+    <script>
+        gform.initializeOnLoaded(function () { jQuery(document).on('gform_post_render', function (event, formId, currentPage) { if (formId == 1) { jQuery('#input_1_2').mask('(999) 999-9999').bind('keypress', function (e) { if (e.which == 13) { jQuery(this).blur(); } }); } }); jQuery(document).bind('gform_post_conditional_logic', function (event, formId, fields, isInit) { }) });
+    </script>
+    <script>
+        gform.initializeOnLoaded(function () { jQuery(document).trigger('gform_post_render', [1, 1]) });
+    </script>
+</body>
+
+</html>
